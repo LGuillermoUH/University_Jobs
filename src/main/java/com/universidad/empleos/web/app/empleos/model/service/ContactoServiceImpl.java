@@ -3,10 +3,11 @@ package com.universidad.empleos.web.app.empleos.model.service;
 import com.universidad.empleos.web.app.empleos.model.dao.IContactoDao;
 import com.universidad.empleos.web.app.empleos.model.entity.Contacto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-
+@Service
 public class ContactoServiceImpl implements IContactoService{
     @Autowired
     public IContactoDao contactoDao;
